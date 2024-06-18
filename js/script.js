@@ -33,6 +33,9 @@ const team = [
     }
 ]
 
+//Dichiarare la variabile per il container del DOM.
+let page = document.getElementById('container');
+
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto.
 
     //Fare un loop che stampi in automatico per ogni oggetto dell'array
@@ -43,3 +46,12 @@ const team = [
     }
 
 //Stampare le stesse informazioni su DOM sottoforma di stringhe.
+team.forEach(team => {
+    const teamDiv = document.createElement('div');
+    teamDiv.innerHTML = `
+      <h3>${team.nome}</h3>
+      <p>Età: ${team.ruolo}</p>
+      <p>Occupazione: ${team.foto}</p>
+    `;
+    container.appendChild(teamDiv);
+});
