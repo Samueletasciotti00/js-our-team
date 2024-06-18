@@ -35,5 +35,11 @@ const team = [
 
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto.
 
+    //Fare un loop che stampi in automatico per ogni oggetto dell'array
+    for(let i = 0; i < team.length; i++){
+
+        // Mettere un consoleLog che incrementi ad ogni giro.
+        console.log(team[i]);
+    }
 
 //Stampare le stesse informazioni su DOM sottoforma di stringhe.
