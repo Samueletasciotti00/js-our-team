@@ -50,8 +50,8 @@ team.forEach(team => {
     const teamDiv = document.createElement('div');
     teamDiv.innerHTML = `
       <h3>${team.nome}</h3>
-      <p>Età: ${team.ruolo}</p>
-      <p>Occupazione: ${team.foto}</p>
+      <p>Ruolo: ${team.ruolo}</p>
+      <p>Foto: ${team.foto}</p>
     `;
     container.appendChild(teamDiv);
 });
